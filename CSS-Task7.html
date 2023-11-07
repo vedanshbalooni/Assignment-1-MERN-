@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Registration Form</title>
+  <link href="./CSS-T7style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form action="/register" method="post">
+      <div class="mb-3">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+      <div class="mb-3">
+        <label for="password-confirm">Confirm Password:</label>
+        <input type="password" class="form-control" id="password-confirm" name="password-confirm" required>
+      </div>
+      <div class="mb-3">
+        <label for="gender">Gender:</label>
+        <select class="form-control" id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="language">Language:</label>
+        <select class="form-control" id="language" name="language">
+          <option value="english">English</option>
+          <option value="french">French</option>
+          <option value="spanish">Spanish</option>
+          <option value="chinese">Chinese</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" class="form-control" id="zipcode" name="zipcode">
+      </div>
+      <div class="mb-3">
+        <label for="about">About:</label>
+        <textarea class="form-control" id="about" name="about"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
+</body>
+</html>
